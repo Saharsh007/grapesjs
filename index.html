@@ -12,8 +12,16 @@
     <script src="node_modules/grapesjs-navbar/dist/grapesjs-navbar.min.js"></script>
     <script src="node_modules/grapesjs-component-countdown/dist/grapesjs-component-countdown.min.js"></script>
     <script src="node_modules/grapesjs-style-gradient/dist/grapesjs-style-gradient.min.js"></script>
-    <script src="node_modules/grapesjs-style-gradient/dist/grapesjs-style-gradient.min.js.map"></script>
+    <!-- <script src="node_modules/grapesjs-style-gradient/dist/grapesjs-style-gradient.min.js.map"></script> -->
     <script src="node_modules/grapick/dist/grapick.min.js"></script>
+    <script src="node_modules/grapesjs-style-filter/dist/grapesjs-style-filter.min.js"></script>
+    <script src="node_modules/grapesjs-style-bg/dist/grapesjs-style-bg.min.js"></script>
+    <script src="node_modules/grapesjs-blocks-flexbox/dist/grapesjs-blocks-flexbox.min.js"></script>
+    <script src="node_modules/grapesjs-lory-slider/dist/grapesjs-lory-slider.min.js"></script>
+    <script src="node_modules/grapesjs-tabs/dist/grapesjs-tabs.min.js"></script>
+    <script src="node_modules/grapesjs-tooltip/dist/grapesjs-tooltip.min.js"></script>
+    <script src="node_modules/grapesjs-custom-code/dist/grapesjs-custom-code.min.js"></script>
+    <script src="node_modules/grapesjs-tui-image-editor/dist/grapesjs-tui-image-editor.min.js"></script>
 
     <style>
       body,
@@ -89,6 +97,12 @@
     </div>
 
     <script type="text/javascript">
+      var filterInput = {
+        name: 'Filter',
+        property: 'filter',
+        type: 'filter', // <- the new type
+        full: 1,
+      };
       var editor = grapesjs.init({
         showOffsets: 1,
         noticeOnUnload: 0,
@@ -96,14 +110,40 @@
         height: '100%',
         fromElement: true,
         storageManager: { autoload: 0 },
-        plugins: ["gjs-blocks-basic","grapesjs-plugin-forms","gjs-navbar",'grapesjs-style-gradient'],
-        pluginsOpts: {
-          'gjs-blocks-basic': { /* ...options */  },
-          'grapesjs-plugin-forms': {  /* ...options */  },
-          'gjs-navbar': { /* ...options */ },
-          'gjs-component-countdown': {/* ...options */},
-          'grapesjs-style-gradient': {},
+        plugins: ["gjs-blocks-basic","grapesjs-plugin-forms","gjs-navbar",'grapesjs-style-gradient',
+                  'grapesjs-style-filter','grapesjs-style-bg','gjs-blocks-flexbox',
+                  'grapesjs-lory-slider','grapesjs-tabs','grapesjs-tooltip','grapesjs-custom-code',
+                  'grapesjs-tui-image-editor',],
 
+        pluginsOpts: {
+          'gjs-blocks-basic': {},
+          'grapesjs-plugin-forms': {},
+          'gjs-navbar': {},
+          'gjs-component-countdown': {},
+          'grapesjs-style-gradient': {},
+          'grapesjs-style-filter': {},
+          'grapesjs-style-bg': {},
+          'gjs-blocks-flexbox': {},
+          'grapesjs-lory-slider': {},
+          'grapesjs-tabs': {},
+          'grapesjs-tooltip': {},
+          'grapesjs-custom-code': {},
+          'grapesjs-tui-image-editor': {
+            config: {
+              includeUI: {
+                initMenu: 'filter',
+              },
+            },
+            icons: {
+              'menu.normalIcon.path': '../icon-d.svg',
+              'menu.activeIcon.path': '../icon-b.svg',
+              'menu.disabledIcon.path': '../icon-a.svg',
+              'menu.hoverIcon.path': '../icon-c.svg',
+              'submenu.normalIcon.path': '../icon-d.svg',
+              'submenu.activeIcon.path': '../icon-c.svg',
+            },
+          },
+          
         },
         styleManager : {
           sectors: [{
@@ -129,7 +169,8 @@
             },{
               name: 'Extra',
               open: false,
-              buildProps: ['transition', 'perspective', 'transform'],
+              buildProps: ['transition', 'perspective', 'transform','filter', 'opacity'],
+              properties: [ filterInput ],
             }
           ],
         },
