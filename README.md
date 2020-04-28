@@ -3,13 +3,13 @@
 
 
 
-<p align="center"><img src="img/img1.jpeg" alt="GrapesJS" width="500" align="center"/></p>
+<p align="center"><img src="https://i.imgur.com/SBKw7xD.jpg" alt="GrapesJS" width="500" align="center"/></p>
 
 
 GrapesJS is a free and open source Web Builder Framework which helps building HTML templates, faster and easily, to be delivered in sites, newsletters or mobile apps. Mainly, GrapesJS was designed to be used inside a [CMS] to speed up the creation of dynamic templates. To better understand this concept check the image below
 
 <br/>
-<p align="center"><img src="img/img2.png" alt="GrapesJS - Style Manager" height="400" align="center"/></p>
+<p align="center"><img src="https://i.imgur.com/eNijSXO.png" alt="GrapesJS - Style Manager" height="400" align="center"/></p>
 <br/>
 
 Generally any 'template system', that you'd find in various applications like CMS, is composed by the **structure** (HTML), **style** (CSS) and **variables**, which are then replaced with other templates and contents on server-side and rendered on client.
@@ -38,11 +38,11 @@ Official demo of GrapeJS: http://grapesjs.com/demo.html
 
 | Blocks | Style Manager | Layer Manager |
 |--|--|--|
-|<img  src="img/img3.jpeg"  alt="GrapesJS - Block Manager"  height="400"  align="center"/>|<img  src="img/img4.jpeg"  alt="GrapesJS - Style Manager"  height="400"  align="center"/>|<img  src="img/img5.jpeg"  alt="GrapesJS - Layer Manager"  height="400"  align="center"/>|
+|<img  src="https://i.imgur.com/0I0S5hb.jpg"  alt="GrapesJS - Block Manager"  height="400"  align="center"/>|<img  src="https://i.imgur.com/cW1rcp9.jpg"  alt="GrapesJS - Style Manager"  height="400"  align="center"/>|<img  src="https://i.imgur.com/TYHryFO.jpg"  alt="GrapesJS - Layer Manager"  height="400"  align="center"/>|
 
 | Code Viewer | Asset Manager |
 |--|--|
-|<img  src="img/img6.jpeg"  alt="GrapesJS - Code Viewer"  height="300"  align="center"/>|<img  src="img/img7.jpeg"  alt="GrapesJS - Asset Manager"  height="250"  align="center"/>|
+|<img  src="https://i.imgur.com/LpTYJ9R.jpg"  alt="GrapesJS - Code Viewer"  height="300"  align="center"/>|<img  src="https://i.imgur.com/vNhIXq7.jpg"  alt="GrapesJS - Asset Manager"  height="250"  align="center"/>|
 
 
 <!-- * Default built-in commands (basically for creating and managing different components) -->
