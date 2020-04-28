@@ -14,9 +14,8 @@ GrapesJS is a free and open source Web Builder Framework which helps building HT
 
 Generally any 'template system', that you'd find in various applications like CMS, is composed by the **structure** (HTML), **style** (CSS) and **variables**, which are then replaced with other templates and contents on server-side and rendered on client.
 
-This demos show examples of what is possible to achieve:
-Webpage Demo - http://grapesjs.com/demo.html
-Newsletter Demo - http://grapesjs.com/demo-newsletter-editor.html
+Official demo of GrapeJS: http://grapesjs.com/demo.html
+
 
 
 
@@ -29,12 +28,8 @@ Newsletter Demo - http://grapesjs.com/demo-newsletter-editor.html
 * [Development](#development)
 * [Documentation](#documentation)
 * [API](#api)
-* [Testing](#testing)
 * [Plugins](#plugins)
-* [Support](#support)
-* [Changelog](https://github.com/artf/grapesjs/releases)
-* [Contributing](https://github.com/artf/grapesjs/blob/master/CONTRIBUTING.md)
-* [License](#license)
+* [Support](#support) 
 
 
 
@@ -43,15 +38,14 @@ Newsletter Demo - http://grapesjs.com/demo-newsletter-editor.html
 
 | Blocks | Style Manager | Layer Manager |
 |--|--|--|
-|<img  src="http://grapesjs.com/img/sc-grapesjs-blocks-prp.jpg"  alt="GrapesJS - Block Manager"  height="400"  align="center"/>|<img  src="http://grapesjs.com/img/sc-grapesjs-style-2.jpg"  alt="GrapesJS - Style Manager"  height="400"  align="center"/>|<img  src="http://grapesjs.com/img/sc-grapesjs-layers-2.jpg"  alt="GrapesJS - Layer Manager"  height="400"  align="center"/>|
+|<img  src="img/img3.jpeg"  alt="GrapesJS - Block Manager"  height="400"  align="center"/>|<img  src="img/img4.jpeg"  alt="GrapesJS - Style Manager"  height="400"  align="center"/>|<img  src="img/img5.jpeg"  alt="GrapesJS - Layer Manager"  height="400"  align="center"/>|
 
 | Code Viewer | Asset Manager |
 |--|--|
-|<img  src="http://grapesjs.com/img/sc-grapesjs-code.jpg"  alt="GrapesJS - Code Viewer"  height="300"  align="center"/>|<img  src="http://grapesjs.com/img/sc-grapesjs-assets-1.jpg"  alt="GrapesJS - Asset Manager"  height="250"  align="center"/>|
+|<img  src="img/img6.jpeg"  alt="GrapesJS - Code Viewer"  height="300"  align="center"/>|<img  src="img/img7.jpeg"  alt="GrapesJS - Asset Manager"  height="250"  align="center"/>|
 
-* Local and remote storage
 
-* Default built-in commands (basically for creating and managing different components)
+<!-- * Default built-in commands (basically for creating and managing different components) -->
 
 
 
@@ -90,17 +84,9 @@ Once the development server is started you should be able to reach the demo page
 
 Check the getting started guide here: [Documentation]
 
-
-
-
-
 ## API
 
 API References could be found here: [API-Reference]
-
-
-
-
 
 ## Plugins
 
@@ -127,7 +113,6 @@ API References could be found here: [API-Reference]
 * [grapesjs-plugin-filestack](https://github.com/artf/grapesjs-plugin-filestack) - Add Filestack uploader in Asset Manager
 * [grapesjs-plugin-ckeditor](https://github.com/artf/grapesjs-plugin-ckeditor) - Replaces the built-in RTE with CKEditor
 * [grapesjs-aviary](https://github.com/artf/grapesjs-aviary) - Add the Aviary Image Editor (dismissed, use the plugin below instead)
-
 * [grapesjs-touch](https://github.com/artf/grapesjs-touch) - Enable touch support
 * [grapesjs-indexeddb](https://github.com/artf/grapesjs-indexeddb) - Storage wrapper for IndexedDB
 * [grapesjs-firestore](https://github.com/artf/grapesjs-firestore) - Storage wrapper for [Cloud Firestore](https://firebase.google.com/docs/firestore)
