@@ -4,7 +4,17 @@
     <meta charset="utf-8">
     <title>GrapesJS</title>
     <link rel="stylesheet" href="dist/css/grapes.min.css">
+    <link href="node_modules/grapick/dist/grapick.min.css" rel="stylesheet">
+
     <script src="dist/grapes.min.js"></script>
+    <script src="node_modules/grapesjs-blocks-basic/dist/grapesjs-blocks-basic.min.js"></script>
+    <script src="node_modules/grapesjs-plugin-forms/dist/grapesjs-plugin-forms.min.js"></script>
+    <script src="node_modules/grapesjs-navbar/dist/grapesjs-navbar.min.js"></script>
+    <script src="node_modules/grapesjs-component-countdown/dist/grapesjs-component-countdown.min.js"></script>
+    <script src="node_modules/grapesjs-style-gradient/dist/grapesjs-style-gradient.min.js"></script>
+    <script src="node_modules/grapesjs-style-gradient/dist/grapesjs-style-gradient.min.js.map"></script>
+    <script src="node_modules/grapick/dist/grapick.min.js"></script>
+
     <style>
       body,
       html {
@@ -86,6 +96,15 @@
         height: '100%',
         fromElement: true,
         storageManager: { autoload: 0 },
+        plugins: ["gjs-blocks-basic","grapesjs-plugin-forms","gjs-navbar",'grapesjs-style-gradient'],
+        pluginsOpts: {
+          'gjs-blocks-basic': { /* ...options */  },
+          'grapesjs-plugin-forms': {  /* ...options */  },
+          'gjs-navbar': { /* ...options */ },
+          'gjs-component-countdown': {/* ...options */},
+          'grapesjs-style-gradient': {},
+
+        },
         styleManager : {
           sectors: [{
               name: 'General',
@@ -114,13 +133,22 @@
             }
           ],
         },
+        
       });
+      
+      // editor.BlockManager.add('testBlock', {
+      //   label: 'Block',
+      //   attributes: { class:'gjs-fonts gjs-f-b1' },
+      //   content: `<div style="padding-top:50px; padding-bottom:50px; text-align:center">Test block</div>`
+      // });
 
-      editor.BlockManager.add('testBlock', {
-        label: 'Block',
-        attributes: { class:'gjs-fonts gjs-f-b1' },
-        content: `<div style="padding-top:50px; padding-bottom:50px; text-align:center">Test block</div>`
-      })
+
+      // const blockManager = editor.BlockManager;
+      
+
+      
+      
+
     </script>
   </body>
 </html>
