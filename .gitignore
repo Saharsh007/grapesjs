@@ -9,8 +9,7 @@ yarn.lock
 style/.sass-cache/
 stats.json
 
-img/
-images/
+
 private/
 vendor/
 coverage/
